@@ -14,7 +14,10 @@ Data Sources - The Sentiment Analysis is based off of using Twitter as the main 
 various tools used to find out the most popular and relevant topics, this analysis will use the Twitter recommended 
 "Top" from "#CopaAmerica".
 
-Using Hive Queries for Word count, we will analyze the data steam from the data sources. First we break sentences into words and word count the pass the data to the Hcatalog dictionary which will enable us to structure the raw data and score the sentiment.
+Using Hive Queries for Word count, we will analyze the data steam from the data sources. 
+
+First we break sentences into words and word count the pass the data to the Hcatalog dictionary which will enable us to 
+structure the raw data and score the sentiment.
 
 Load - Refine - Visualize
 
