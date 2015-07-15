@@ -1,0 +1,6 @@
+Hadoop specifics:
+	
+Operating System: CentOS release 6.6 / x86_64 kernal
+Hardware: Intel (R) Xeon (R) CPU E31270 @ 3.40GHz
+
+Pseudo-distributed mode : The Hadoop daemons run on a local machine, thus simulating a cluster on a small scale. Different Hadoop daemons run in different JVM instances, but on a single machine. HDFS is used instead of local FS.
