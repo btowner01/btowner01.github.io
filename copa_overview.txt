@@ -1,10 +1,18 @@
-Copa America 2015 - The 2015 Copa América is the 44th edition of the Copa América, the main international football tournament for national teams in South America, and currently taking place in Chile between the dates of 11 June to 4 July 2015.[1] The competition will be organized by CONMEBOL, South America's football governing body.
+Copa America 2015 - The 2015 Copa AmÃ©rica is the 44th edition of the Copa AmÃ©rica, the main international football 
+tournament for national teams in South America, and currently taking place in Chile between the dates of 11 June to
+4 July 2015.[1] The competition will be organized by CONMEBOL, South America's football governing body.
 
-Uruguay are the defending champions. Twelve teams will compete, the ten members of CONMEBOL and two guests from CONCACAF – Mexico and Jamaica, the latter of which will compete in Copa América for the first time. The winner of the tournament, or the best placed CONMEBOL team if Mexico or Jamaica win the tournament, will qualify for the 2017 FIFA Confederations Cup.
+Uruguay are the defending champions. Twelve teams will compete, the ten members of CONMEBOL and two guests from 
+CONCACAF â€“ Mexico and Jamaica, the latter of which will compete in Copa AmÃ©rica for the first time. The winner of the
+tournament, or the best placed CONMEBOL team if Mexico or Jamaica win the tournament, will qualify for the 
+FIFA Confederations Cup.
 
-The 2016 Centennial Copa America will take place in the United States next year as a special celebration of the centenary of CONMEBOL and the Copa América itself.
+The 2016 Centennial Copa America will take place in the United States next year as a special celebration of the centenary 
+of CONMEBOL and the Copa AmÃ©rica itself.
 
-Data Sources - The Sentiment Analysis is based off of using Twitter as the main data source.  Regardless of the various tools used to find out the most popular and relevant topics, this analysis will use the Twitter recommended "Top" from "#CopaAmerica".
+Data Sources - The Sentiment Analysis is based off of using Twitter as the main data source.  Regardless of the 
+various tools used to find out the most popular and relevant topics, this analysis will use the Twitter recommended 
+"Top" from "#CopaAmerica".
 
 Using Hive Queries for Word count, we will analyze the data steam from the data sources. First we break sentences into words and word count the pass the data to the Hcatalog dictionary which will enable us to structure the raw data and score the sentiment.
 
