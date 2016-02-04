@@ -1,99 +1,727 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Btowner01.GitHub.io by btowner01</title>
+<head>
+<meta charset="utf-8">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<head>
+<title>Benjamin Towner | AWS Cloud Engineer</title>
+<style type="text/css">
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
-      ga('create', 'UA-28254674-2', 'auto');
-      ga('send', 'pageview');
-    
-    </script>
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="without-description">
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+blockquote {
+  margin: 1em 40px;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+p,
+pre {
+  margin: 1em 0;
+}
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+q {
+  quotes: none;
+}
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+small {
+  font-size: 75%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+dd {
+  margin: 0 0 0 40px;
+}
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+form {
+  margin: 0;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button,
+input {
+  line-height: normal;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;
+}
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body.pdf {
+  color: black;
+}
+body.pdf a {
+  text-decoration: none;
+  color: black;
+}
+body.pdf .container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  background: none;
+  border: none;
+  border-width: 8px 0 2px 0;
+  text-align: left;
+}
+body.pdf .resume {
+  position: relative;
+  padding: 40px 80px;
+}
+body.pdf a[href$='.pdf'] {
+  display: none;
+}
+body.pdf h1 {
+  letter-spacing: 0;
+  margin-top: 0;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+body.pdf h2 {
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: normal;
+}
+body.pdf h3 {
+  float: left;
+  width: 16%;
+  font-style: normal;
+}
+body.pdf h3+p {
+  float: left;
+  width: 78%;
+}
+body.pdf blockquote {
+  top: 40px;
+  right: 50px;
+  position: absolute;
+}
+body.pdf ul li {
+  width: 33%;
+  float: left;
+}
+body.pdf ul dl {
+  margin: 0;
+  padding: 0.3em 0 0;
+}
+body.pdf ul dl dt {
+  font-size: 122%;
+  font-weight: normal;
+  margin: 0 0 .75em;
+}
+body.pdf ul dl dd {
+  padding: 0 2em 0 0;
+}
+body.pdf ol {
+  float: left;
+  width: 79%;
+  margin: .7em 0 0;
+}
+body.pdf ol li {
+  width: 33%;
+  margin: 0;
+}
+body.pdf ol li:nth-child(3n) {
+  width: 34%;
+}
+body.pdf ol li:nth-child(1),
+body.pdf ol li:nth-child(2),
+body.pdf ol li:nth-child(3) {
+  border-top: none;
+}
+body.pdf dl {
+  margin: .7em 0 0;
+  page-break-inside: avoid !important;
+  display: block;
+  width: 79%;
+  float: left;
+}
+body.pdf dl strong {
+  float: right;
+  margin-top: -2em;
+}
+body.pdf dl em {
+  font-size: 130%;
+  font-style: normal;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+body {
+  font-family: 'Hoefler Text', Times New Roman, Times, serif;
+  color: #444;
+}
+h1,
+h2,
+h3,
+h4,
+ul dl dt {
+  font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
+}
+.container {
+  margin: 0 auto;
+  padding: 0;
+  background: whiteSmoke;
+  border: solid #666;
+  border-width: 8px 0 2px 0;
+  text-align: left;
+}
+.resume {
+  position: relative;
+  padding: 10px 20px;
+}
+a {
+  color: #990003;
+}
+a[href$='.pdf'] {
+  display: inline-block;
+  background: #666;
+  color: white;
+  padding: 6px 12px;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+blockquote {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4em;
+}
+hr {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 18px auto;
+  width: 100%;
+  clear: both;
+  border: none;
+  border-top: 1px solid #CCC;
+  font-size: 1px;
+  line-height: 0;
+  overflow: visible;
+  page-break-after: avoid;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  letter-spacing: -1px;
+  font-weight: normal;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: -1px;
+  font-weight: normal;
+}
+h3 {
+  margin: 0px 20px;
+  padding: 0 0 .5em;
+  font-size: 150%;
+  font-style: italic;
+  font-weight: normal;
+}
+h3+p {
+  margin: .6em 0 16px;
+  padding: 0;
+  display: block;
+  font-size: 104%;
+  line-height: 24px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+}
+ul li {
+  margin: 0;
+  padding: 0;
+}
+ul dl {
+  margin: .3em 0 0;
+  padding: 0;
+  width: 100%;
+}
+ul dl dt {
+  font-size: 100%;
+}
+ul dl dd {
+  margin: 0 0 1em;
+  padding: 0 2em 0 0;
+  font-size: .8em;
+  line-height: 1.5em;
+}
+ol {
+  margin: 0;
+  padding: 0 0 .75em;
+  width: 84%;
+  display: inline-block;
+}
+ol li {
+  margin: 0 0 0 1em;
+  padding: 0;
+  border-top: 1px solid #CCCCCC;
+  width: 100%;
+  float: left;
+  list-style: none;
+  line-height: 24px;
+  font-size: 14px;
+}
+ol li:nth-child(1) {
+  border-top: none;
+}
+dl {
+  display: inline-block;
+  width: 78%;
+  margin: 0;
+  padding: 0;
+}
+dl dt {
+  margin: 0;
+  padding: 0;
+  font-size: 140%;
+}
+dl dd {
+  margin: 0 0 1.5em;
+  padding: 0;
+  font-size: 80%;
+  line-height: 1.4em;
+}
+dl strong {
+  display: block;
+}
+dl em {
+  display: block;
+  font-size: 110%;
+  margin: .15em 0 .5em;
+  font-style: bold;
+}
+#footer {
+  display: none;
+}
+#footer + p {
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+}
+
+@media screen and (min-width: 37.5em) {
+  body {
+    padding: 2em 0;
+  }
+  blockquote {
+    top: 10px;
+    right: 50px;
+    position: absolute;
+  }
+  h1 {
+    margin-top: .5em;
+  }
+  ol {
+    margin: 0 0 0 1em;
+  }
+  ol li {
+    width: 50%;
+    margin: 0;
+  }
+  ol li:nth-child(1),
+  ol li:nth-child(2) {
+    border-top: none;
+  }
+}
+@media screen and (min-width: 57em) {
+  .container {
+    width: 912px;
+  }
+  .resume {
+    position: relative;
+    padding: 40px 50px;
+  }
+  blockquote {
+    top: 40px;
+    right: 50px;
+    position: absolute;
+  }
+  h1 {
+    margin-top: 0;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: normal;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-weight: normal;
+  }
+  h3 {
+    float: left;
+    width: 16%;
+  }
+  h3+p {
+    float: left;
+    width: 78%;
+  }
+  ul li {
+    width: 33%;
+    float: left;
+  }
+  ul dl dt {
+    font-size: 122%;
+    font-weight: normal;
+    margin-bottom: .75em;
+  }
+  ul dl dd {
+    padding: 0 2em 0 0;
+  }
+  ol {
+    float: left;
+    width: 79%;
+    margin: .6em 0 0;
+  }
+  ol li {
+    width: 33%;
+    margin: 0;
+  }
+  ol li:nth-child(3n) {
+    width: 34%;
+  }
+  ol li:nth-child(1),
+  ol li:nth-child(2),
+  ol li:nth-child(3) {
+    border-top: none;
+  }
+  dl {
+    margin: .5em 0 0;
+  }
+  dl strong {
+    float: right;
+    margin-top: -2em;
+  }
+  dl em {
+    font-size: 130%;
+    font-style: normal;
+  }
+}
+
+</style>
+</head>
+
+<body class="">
+
+<div class="container">
+    <div class="resume">
         <h1>Benjamin Towner</h1>
-        <p></p>
-        <p class="view"><a href="https://github.com/btowner01">View the Project on GitHub <small>btowner01</small></a></p>
-        <ul>
-          <li class="single"><a href="https://github.com/btowner01/btowner01.github.io">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>	
-      <section>
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to my software projects hosted on GitHub.</h3>
 
-<p>The following projects demonstrate key features of the projects that I have developed or contribute to.  The source code can be viewed in greater detail on GitHub (Top Right), and 
-the software is deployed on <a href="http://aws.amazon.com/" target="_blank">Amazon</a>- Infrastructure-as-a-Service (IaaS). </p>
+<h2>AWS Cloud Engineer</h2>
 
+<blockquote>
+  <p><a href="resume.pdf">Download PDF</a><br />
+  <a href="btowner01@gmail.com">btowner01@gmail.com</a></p>
+</blockquote>
 
-<h3><a id="BigData-implement" class="anchor" href="" aria-hidden="true"><span class="octicon octicon-link"></span>Big Data - Sentiment Analysis</a></h3> 
-<p>Sentiment analysis refers to various methods of examining and processing data in order to identify a subjective response, people talk on social media.. this is their general mood or a group's opinions about a specific topic. 
-<br>
-<br>
-Using the Apache Hadoop ecosystem , I created a Twitter Sentiment Analysis of Copa America 2015.  The United States will host Copa America 2016 as this will serve as a benchmark.
-Apache provides the ecosystem which includes segmented functions within Storage, Processing, Access and Management.  
-<br>
-Before diving into this process, it is import to understand the benefits of using  <a href="https://www.youtube.com/watch?v=S6Ja55n-o0M&feature=youtu.be" target="_blank">Amazon EMR</a>.
+<hr />
 
-<br>
-The data objects will be provided in Amazon S3 for collaboration.  I have built a specialized EC2 instance for this demonstration.  It consists of Apache: <p>
-Hadoop 2.7.1 in pseudo-distributed mode (Core = HDFS,MapReduce,Yarn), Flume, Manhout, Pig, Hive, ZooKeeper and Avro. 
-<br>
-<br>
-Load - Refine - Visualize<br>
+<h3 id="profile">Profile</h3>
 
-<h3><a id="owncloud-implement" class="anchor" href="http://finware.bti3global.com/owncloud/index.php" target="_blank" aria-hidden="true"><span class="octicon octicon-link"></span>ownCloud - Enterprise file sync and share</a></h3> 
+<p>Professional breadth and depth of skills with domain knowledge of Marketplace / Open source technology obtained from experiences implementing and enabling business processes to deliver transformational uses of technology, delivered within an Agile Project Management framework.  Ambitious and enthusiastic, ability to learn and adapt quickly and provide results under pressure.</p>
 
-<p>OwnCloud is open source file sync and share software for everyone from individuals operating the free Community Edition.ownCloud provides a safe, secure and compliant file sync and share solution on servers you control.
+<hr />
 
-With ownCloud you can share one or more folders on your PC, and sync them with your ownCloud server. Place files in your local shared directories, and those files are immediately synced to the server, and then to other PCs via the desktop client. 
-<br><br>Not near a desktop client? No problem, simply log in with the web client and manage your files there. The Android and iOS mobile apps allow you to browse, download and upload photos and videos. On Android, you may also create, download, edit and upload any other files, with the correct software installed.
+<h3 id="skills">Skills</h3>
 
-Whether using a mobile device, a workstation, or a web client, ownCloud provides the ability to put the right files in the right hands at the right time on any device in one simple-to-use, secure, private and controlled solution. After all, with ownCloud, it’s Your Cloud, Your Data, Your Way.</p>
+<ul>
+<li><dl>
+<dt>Developer</dt>
+<dd>Enable technology to provide business solutions using agile methods of plan, design, code, implement and maintain.</dd>
+</dl></li>
+<li><dl>
+<dt>Infrastructure</dt>
+<dd>Deliver cloud resources as automated/integrated process to development and operations.</dd>
+</dl></li>
+<li><dl>
+<dt>Project Management</dt>
+<dd>Proven ability to lead and manage a wide variety of design and development projects in agile team and independent governance.</dd>
+</dl></li>
+</ul>
 
+<hr />
 
-<h3><a id="pmwiki-implement" class="anchor" href="http://finware.bti3global.com/sugar/" target="_blank" aria-hidden="true"><span class="octicon octicon-link"></span>SugarCRM - Customer Relationship Management</a></h3> 
+<h3 id="technical">Technical</h3>
 
-<p>Sugar uses industrystandard
-technologies, including HTML5, REST, JavaScript
-and PHP, delivering improved agility, lower total cost of
-ownership and long-term peace of mind. Developers
-have complete access to our software platform and have
-responded by creating nearly 200 commercial integrations
-with leading business applications. <br><br>As businesses grow, and
-as business and social networks evolve, Sugar can easily be
-modified, extended and integrated quickly and effectively.
-This flexibility makes Sugar a long-term, future proof solution
-that continues to add value after other CRM applications
-have become obsolete.</p>
+<ol>
+<li>AWS CloudFormation</li>
+<li>AWS CodePipeline</li>
+<li>Amazon API Gateway</li>
+<li>Ansible</li>
+<li>Node.js</li>
+<li>MongoDB</li>
+<li>Jenkins</li>
+<li>Apache Hadoop</li>
+<li>Apache Spark</li>
+<li>Linux</li>
+<li>PHP</li>
+<li>Java</li>
+<li>SQL</li>
+<li>Git</li>
+<li>Jira</li>
+</ol>
 
-<!-- <pre><code><iframe src="http://finware.bti3global.com/" frameborder="0" scrolling="yes" width="100%"></iframe> </code></pre> - -->
+<hr />
 
+<h3 id="experience">EXPERIENCE</h3>
 
+<dl>
+<dt><a href="http://www.ContainerAideR.com">ContainerAideR</a></dt>
+<dd><em>AWS Cloud Engineer</em>
+<strong>September 2015 - On-going</strong>
+Develop Amazon AMI Maketplace products of auto-scalable, highly available, fault tolerant systems.<br />
+Automate Deployment though creation of Chef resource files, CloudFormation Templates and Ansible Playbooks.<br />
+Integrate real-time non-blocking I/O, event driven web applications as a Front-end User-interface to analytics.<br />
+Design API Gateways for client access using Microservices architecture.<br />
+Lift and shift of an existing on-premises application to Amazon Web Services (AWS).</dd>
 
-     </section>
+<dt><a href="http://www.vanare.com">Vanare</a></dt>
+<dd><em>Project Manager</em>
+<strong>October 2015 - December 2015</strong>
+Provide Project Management / Business Analyst support to deliver RFI replies and Product Documentation.<br />
+Manage offshore development teams to resolve product deliverables.<br />
+Support Modular design, Document system Process flows and critical path definitions.</dd>
+
+<dt><a href="http://www.troylines.com">Troy Container Line LTD</a></dt>
+<dd><em>Technology Manager</em>
+<strong>February 2013 - September 2015</strong>
+A Non-Vessel Operating Common Carrier who partners with others to provide individual shippers and freight forwarding services to ensure cargo or freight moving from point of origin to its final destinations.
+Enterprise Architect - design Logistics platform in support of NVOCC&#8217;s operations.<br />
+Optimize Load Planning utilizing metaheuristic algorithms in container cell division.<br />
+Lift and shift legacy solution into Web Application with Services Oriented Architecture (Publish-Subscribe).</dd>
+
+<dt><a href="">BTi3 Global</a></dt>
+<dd><em>Solutions Architect</em>
+<strong>August 2010 - January 2013</strong>
+Execute algorithmic trading strategies within suitability models of trading constraints using genetic optimization algorithms of Technical Indicators. Review artifacts of OMS requirements and identify automation opportunities.<br />
+Prepare and review performance reports, risk metrics and attribution details to review risk/allocation metrics such as Value-at-Risk (VaR), mean-variance optimization, Bayesian, Black-Litterman allocation.<br />
+Provide statistical visualizations of the covariance matrix used in Principal Component Analysis.</dd>
+
+<dt><a href="">AV Autogroup</a></dt>
+<dd><em>Director of Technology</em>
+<strong>June 2006 - August 2010</strong>
+Provide Franchise Owner Direct Support to identify, obtain and implement technology needs.<br />
+Assess Enterprise / Data Management systems. Convert Client/Server model to Services Oriented Architecture, identify dependencies, determine training requirements, and coordinated project execution.<br />
+Project Management - conversion of CRM vendor systems from ADP to Salesforce.com using Informatica - ETL.<br />
+Private cloud implementation to deliver virtualization solution of domain - EMC NAS/SAN optimization, VMware vSphere configuration, Cisco router configuration - vendor neutral networking.</dd>
+</dl>
+
+<hr />
+
+<h3 id="footer">Footer</h3>
+
+<p>Benjamin Towner &#8212; <a href="btowner01@gmail.com">btowner01@gmail.com</a></p>
+
+<hr />
+
     </div>
-    <footer>
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-    </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
+</div>
+
+</body>
 </html>
